@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title>Bootstrap Assignment</title>
+		<meta name="description" content="">
+
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+	</head>
+	<body>
+
+	<!-- Your Code Goes Here. Remember to remove this comment once you've started, you don't need it :) -->
+	<div class="container">
+		<div class="navbar navbar-fixed-top">
+			<div class="container">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class ="navbar-brand"href="#">
+			  	<img src="img/logo3.jpg" alt="Logo" />
+		   	</a>
+				<div class="nav-collapse collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html"> HOME </a></li>
+						<li><a href="#"> ABOUT US </a></li>
+						<li class="dropdown">
+						 <a href="#" class="dropdown-toggle" data-toggle="dropdown"> RESOURCES <strong class="caret">
+						 </strong>
+						 </a>
+						 <ul class="dropdown-menu">
+							 <li>
+ 								<a href="resources.html">Content management systems</a>
+ 							</li>
+ 							<li>
+ 								<a href="#">Virtual shops and ecommerce</a>
+ 							</li>
+ 							<li>
+ 								<a href="#">Presentation websites</a>
+ 							</li>
+ 							<li class="divider">
+ 							</li>
+ 							<li class="dropdown-header">
+ 							 More Services
+ 							</li>
+ 							<li>
+ 								<a href="#">Android Apps</a>
+ 							</li>
+ 							<li>
+ 								<a href="#">Windows Apps</a>
+ 							</li>
+						 </ul>
+						</li>
+						<li><a href="#"> CONTACT US </a></li>
+					</ul>
+					<form class="navbar-form pull-left" action="index.html" method="post">
+						<input type="text" name="name" class="form-control" placeholder="See this site" id="searchInput">
+						<button type="submit" class="btn btn-default">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</form>
+					<ul class="nav navbar-nav pull-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span class="glyphicon glyphicon-globe">
+									LANGUAGE
+									<strong class="caret"></strong>
+								</span>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">
+										<span class="glyphicon glyphicon-triangle-right">English</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										French
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Germany
+									</a>
+								</li>
+							</ul>
+					</ul>
+				</div>
+	  	</div>
+		</div>
+		<div class="carousel slide" id="myCarousel">
+			<ol class="carousel-indicators active">
+				<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+				<li data-slide-to="1" data-target="#myCarousel"></li>
+				<li data-slide-to="2" data-target="#myCarousel"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active" id="slide1">
+					<div class="carousel-caption">
+						<h4>Globalization</h4>
+
+					</div>
+				</div>
+				<div class="item" id="slide2">
+					<div class="carousel-caption">
+						<h4>How we Work</h4>
+						<p>
+							We are a mix of strategists, creative directors, designers, writers, media strategists, digital marketers, developers and relationship builders. We are committed to creating vibrant and relevant brand experiences on every level.
+						</p>
+					</div>
+				</div>
+				<div class="item" id="slide3">
+					<div class="carousel-caption">
+						<h4>Strategies</h4>
+						<p>
+							 We see challenges as opportunities. For our clients. And for ourselves. We love solving problems, with impact and velocity. And we never grow tired of learning new things.
+						</p>
+					</div>
+				</div>
+			</div>
+			<a href="#myCarousel" class="left carousel-control" data-slide="prev" >
+				<span class="icon-prev"></span>
+				</a>
+			<a href="#myCarousel" class="right carousel-control" data-slide="next" >
+				<span class="icon-next"></span>
+			 </a>
+		</div>
+		<div class="row bigCallout">
+			<div class="well well-small visible-sm">
+				<a href="#" class="btn btn-large btn-block btn-default">
+					<span class="glyphicon glyphicon-phone"></span> Give us a call
+				</a>
+			</div>
+			<div class="well">
+				<div class="page-header">
+					<h1>What we do<small>&nbsp;strategy, design & technology</small></h1>
+				</div>
+				<p class="lead">
+					We focus on getting things done - through micro-strategies, incremental builds and rapid iterations - and we have a diverse multi-disciplinary and international team of people who bring creativity, energy and excellence to every engagement.
+				</p>
+				<a href="#myModal" class="btn btn-large btn-info" data-toggle="modal">	<span class="glyphicon glyphicon-hand-up">
+				</span> Can I Help You?</a>
+				<div class="modal fade" id="myModal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"name="button">&times;</button>
+								<h2 class="modal-title">Submit your query here!!</h2>
+							</div>
+							<div class="modal-body">
+								<p class="lead">
+									Any doubt feel free to ask us...we are happy to help you..
+								</p>
+								<form class="form-horizontal" action="index.html" method="post">
+									<div class="form-group">
+										<label for="name" class="col-lg-2 control-label">Name</label>
+										<div class="col-lg-10">
+											<input type="text" name="name" class="form-control" id="name" placeholder="Enter your name">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="email" class="col-lg-2 control-label">Email</label>
+										<div class="col-lg-10">
+											<input type="text" name="email" class="form-control" id="email" placeholder="Enter your email">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="query" class="col-lg-2 control-label">Query</label>
+										<div class="col-lg-10">
+											<textarea name="query" rows="4"  class="form-control" placeholder="Enter your query" id="query"></textarea>
+											<button type="button" class="btn btn-success pull-right" name="button" data-original-title="Click here to submit" rel="tooltip">Submit!</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="close btn btn-block" data-dismiss="modal"name="button">close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="featuresHeading">
+			<div class="col-12">
+				<h1>Our Features</h1>
+				<p class="lead">
+				The full breadth of Wipro Digital and DesignIt capabilities in strategy, design and technology positions us at intersections where we derive insight, shape interaction, develop integration and unlock innovation - with the customer's journey at the center of everything we do</p>
+			 </div>
+		</div>
+		<div class="row" id="features">
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<h3 class="panel-heading">
+						WEBSITE SOLUTIONS
+					</h3>
+					<img src="img/website.jpg" alt="WEBSITE SOLUTIONS" class="img-thumbnail" />
+					<ul class="styleIcon">
+						<li>Content management systems</li>
+						<li>Virtual shops and ecommerce</li>
+						<li>Presentation websites</li>
+						<li>Online catalogues</li>
+						<li>Portal systems</li>
+						<li>Dynamic websites</li>
+					</ul>
+					<a href="#" target="_blank" class="btn btn-block btn-warning">Know More</a>
+				</div>
+			</div>
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<h3 class="panel-heading">
+						INTERNET MARKETING
+					</h3>
+					<img src="img/internet1.jpg" alt="WEBSITE SOLUTIONS" class="img-thumbnail" />
+					<ul class="styleIcon">
+						<li>Search engine optimisation</li>
+						<li>Search engine marketing</li>
+						<li>Social Media Marketing</li>
+						<li>Content Marketing</li>
+						<li>Affiliate Marketing</li>
+						<li>Social Buzz Platform</li>
+					</ul>
+					<a href="#" target="_blank" class="btn btn-block btn-success">Know More</a>
+				</div>
+			</div>
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<h3 class="panel-heading">
+						MOBILE & CLOUD APPS
+					</h3>
+					<img src="img/mobile.jpg" alt="WEBSITE SOLUTIONS" class="img-thumbnail" />
+					<ul class="styleIcon">
+						<li>Android Apps</li>
+						<li>Windows Apps</li>
+						<li>iOS Apps</li>
+						<li>Online Marketing Tools</li>
+						<li>Windows Azure Cloud</li>
+						<li>Universal Backend for Apps</li>
+					</ul>
+					<a href="#" target="_blank" class="btn btn-block btn-danger">Know More</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6" id="moreInfo">
+				   <h2>Our Work</h2>
+						<div class="tabbable">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#myTab1" data-toggle="tab">SOCIAL MEDIA MARKETING</a></li>
+								<li><a href="#myTab2" data-toggle="tab">DIGITAL MARKETING SOLUTIONS</a></li>
+							</ul>
+							<div class="tab-content" id="myTab">
+									<div class="tab-pane active" id="myTab1">
+										<h4>SOCIAL MEDIA MARKETING: 4 THINGS YOU NEED TO FIX <small>Designing digital fan experiences!</small></h4>
+										<img src="img/social3.jpg" alt="" class="img-thumbnail pull-left" />
+										<p>
+											Rio 2016, the Super Bowl, UEFA Euro 2016 the coming year will be a huge one for sports. And whether on the field or off, at home or in an airport, hotel, car, wherever they may be, sports fans and nascent sports fans around the world are ready for the delight of digital to enrich their experience.
+										</p>
+										<p>
+											Bringing that many sport fans together comes with serious logistical and experiential challenges: traffic, parking, security, ambience, mobility, connectivity. But beyond the stadium, a global football club like Chelsea might have 600 million global fans. How do you orchestrate an infinite number of touch points-physical as well as digital – to connect with such a large and diverse community? Every challenge is, simultaneously, a chance to define your fans' experience, both in-stadium and out. Sure, technology is crucial, but to create truly world-class experiences, technology alone simply would not cut it.
+										</p>
+									</div>
+									<div class="tab-pane " id="myTab2">
+										<h4>A SIMPLE TECHNIQUE TO HELP IN EVERYDAY DIGITAL MARKETING ACTIVITIES <small>I survived the debate at CSFI in London yesterday!</small></h4>
+										<img src="img/social4.png" alt="" class="img-thumbnail pull-left" />
+										<p>
+										When Metro Bank PLC was granted its banking license by the UK Financial Services Authority in March, 2010, it was the first high-street bank to be granted such a license in over 150 years. Since then, a number of new challenger banks such as Shawbrook and Aldermore, have entered the market with a focus on underserved segments such as buy-to-let or commercial lending. Now, with the announcement that a number of “pure digital” banks, such as Atom, Fidor and Mondo expect banking licenses this year, we’re seeing a new type of challenger in the arena.</p>
+										<p>
+											The question posed by Hakim Mendjeli, our chair at the Centre for the Study of Financial Innovation (CSFI) event yesterday, was whether these challengers could actually disrupt the incumbent big 4, all offering mobile banking and rich digital channels for retail customers.	</p>
+									</div>
+						</div>
+				 </div>
+		  </div>
+			<div class="col-sm-6">
+				<h2>Internet Of Things</h2>
+				<p>
+					Enable remote monitoring for millions of patients, analyze trends to create delightful shopping experiences, or save jillions by pro-actively managing your critical machinery – the Internet of All Things (IoT) is here!
+				</p>
+				<p>
+					We help you to explore a journey where your devices seamlessly interact with each other to gather, store, and process data. You may have a goal to boost your productivity, generate new revenue streams, enhance security or radically transform your service support – all of this becomes possible with IoT.
+				</p>
+				<h4>HOW WIPRO HELPS</h4>
+				<div class="list-group">
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">Create delightful customer experiences</h4>
+						<p class="list-group-item-text">
+							Capture the business insights enabled by connected objects to understand your customers better, anticipate market trends and invent the future
+						</p>
+					 </a>
+					 <a href="#" class="list-group-item">
+ 						<h4 class="list-group-item-heading">Innovate and generate new revenue streams</h4>
+ 						<p class="list-group-item-text">
+ 							Your connected ecosystem will offer comprehensive intelligence to facilitate the building of new services and revenue streams on top of traditional products</p>
+ 					 </a>
+					 <a href="#" class="list-group-item">
+ 						<h4 class="list-group-item-heading">Proactive management</h4>
+ 						<p class="list-group-item-text">
+ 							The intelligence and insights gathered will enable you to proactively fix issues long before they actually occur. Detect machine failure well in advance; boost machine uptime; accurately forecast your spare parts requirement; and revolutionize your customer service experience.</p>
+ 					 </a>
+				 </div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+  <footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5">
+					<h4>Reach us</h5>
+					<ul class="unstyled">
+						<li><span class="glyphicon glyphicon-headphones"></span> +91 4567 567 567</li>
+						<li><span class="glyphicon glyphicon-envelope"></span> contact@wiprodigital.com</li>
+           	<li><span class="glyphicon glyphicon-map-marker"></span> Our Location</li>
+					</ul>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.0622832411573!2d77.65720041412274!3d12.839251821244087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6c86b4ce15b5%3A0x17136a2209f6c02c!2s3%2C+Wipro+Ave%2C+Electronics+City+Phase+1%2C+Electronic+City%2C+Bengaluru%2C+Karnataka+560100!5e0!3m2!1sen!2sin!4v1454068797282" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen ></iframe>
+				</div>
+				<div class="col-sm-4">
+					<h4>Quick links</h5>
+					<ul class="unstyled">
+						<li><a href="#">Affiliate</a></li>
+						<li><a href="#">Disclaimer</a></li>
+           	<li><a href="#">Terms & Conditions</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<h4>Stay in touch!</h5>
+						<ul class="social">
+	            <li><a href="#"><img src="img/facebook.png" alt="facebook" /></a></li>
+	            <li><a href="#"><img src="img/youtube.png" alt="youtube" /></a></li>
+	            <li><a href="#"><img src="img/twitter.png" alt="twitter" /></a></li>
+	            <li><a href="#"><img src="img/gmail.png" alt="gmail" /></a></li>
+	          </ul>
+				</div>
+			</div>
+		</div>
+		<div class="row col-sm-12 " id="copyright">
+			<div class=" container">
+				<div class="pull-right">
+			  Copyrights &copy; 2016 All Rights Reserved by Shefali
+			 </div>
+		 </div>
+		</div>
+	</footer>
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+
+	</body>
+</html>
