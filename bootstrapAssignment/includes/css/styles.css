@@ -2,103 +2,10 @@
 
 My Custom CSS
 =============
-
-Author:  Brad Hussey
-Updated: August 2013
-Notes:	 Hand coded for Udemy.com
-
-*/
-
-
-/* --------------------------------------
-   Layout
-   -------------------------------------- */
-
-   .well .page-header{
-     margin-top: 0px;
-   }
-
-   .well .page-header h1{
-     text-shadow: 0 2px 0 white;
-     margin-top: 0px;
-   }
-
-   .well{
-     background: url('../../img/blue_1.jpg');
-     margin:18px 15px;
-   }
-
-   #features ul{
-     list-style-type: circle;
-     padding-left: 13px;
-   }
-
-   #features img{
-     margin-bottom: 20px;
-   }
-
-   .tabbable img {
-     margin:0 10px 10px 0;
-   }
-
-   #query{
-     margin-bottom: 15px;
-   }
-
-   footer{
-     //padding: 20px;
-     color:#eee;
-     background:#333;
-   }
-
-footer .container{
-  padding-left:10px;
-}
-   ul.unstyled{
-     list-style-type: none;
-     padding: 0px;
-   }
-
-   ul.unstyled li{
-     margin: 10px 0px;
-   }
-
-   ul.social{
-     list-style-type: none;
-     padding: 0px;
-   }
-
- ul.social li{
-   display: inline;
-   margin: 0px 15px 0 0;
-
- }
-
- #copyright{
-   background-color: black;
-   height: 50px;
-   margin:0px;
-   padding: 20px 20px;
- }
 /*
-   #moreInfo.col-sm-6{
-     padding-left: 0px;
-   }
+ css for navigation bar
 */
-   #myTab{
-     padding-left: 10px;
-   }
 
-  #myTab h4{
-    line-height: 1.3em;
-  }
-/* --------------------------------------
-   Typography
-   -------------------------------------- */
-
-/* --------------------------------------
-   Navbar
-   -------------------------------------- */
    #searchInput{
      width:200px;
    }
@@ -107,13 +14,14 @@ footer .container{
      padding: 12px 15px;
    }
 
-   /* --------------------------------------
-      Carousel
-      -------------------------------------- */
+   /*
+    css for carousel
+  */
+
       #myCarousel .item{
-        height: 400px;
+        height: 420px;
         margin-top: 20px;
-      }
+    }
 
       .carousel-caption h4{
 
@@ -121,35 +29,35 @@ footer .container{
         font-weight: bold;
         text-shadow: 0 2px 0 black;
         font-family: serif;
-      }
+    }
 
       .carousel-caption p{
         font-size: 20px;
         font-family: monospace;
         font-weight: bold;
 
-      }
+    }
 
 
       #slide1{
         background: url('../../img/carousel-mdm-1.jpg') top center no-repeat;
-      }
+    }
 
       #slide2{
         background: url('../../img/carousel-mdm-2.jpg') top center no-repeat;
-      }
+    }
 
       #slide3{
         background:url('../../img/carousel-mdm-03_1.jpg') top center no-repeat;
-      }
+    }
 
 
-/* --------------------------------------
+  /* --------------------------------------
    Media Queries
    -------------------------------------- */
 
-/* Portrait & landscape phone */
-@media (max-width: 480px) {
+  /* Portrait & landscape phone */
+  @media  (min-width: 320px) and (max-width: 480px) {
   .carousel-caption h4{
     font-size: 18px;
   }
@@ -157,10 +65,27 @@ footer .container{
   .carousel-caption p{
     font-size: 16px;
   }
-}
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
+  #myCarousel .item{
+    height: 200px;
+  }
+
+  #slide1{
+    background: url('../../img/carousel-xsml-1.jpg') top center no-repeat;
+  }
+
+  #slide2{
+    background: url('../../img/carousel-xsml-2.jpg') top center no-repeat;
+  }
+
+  #slide3{
+    background:url('../../img/carousel-xsml-03.jpg') top center no-repeat;
+  }
+
+  }
+
+  /* Landscape phone to portrait tablet */
+  @media (max-width: 768px) {
   #myCarousel .item{
     height: 300px;
   }
@@ -186,12 +111,12 @@ footer .container{
     background:url('../../img/carousel-sml-03.jpg') top center no-repeat;
   }
 
-}
+  }
 
-/* Large desktop */
-@media (min-width: 1200px) {
+  /* Large desktop */
+  @media (min-width: 1200px) {
   #myCarousel .item{
-    height: 500px;
+    height: 520px;
   }
 
   .carousel-caption h4{
@@ -214,17 +139,119 @@ footer .container{
     background:url('../../img/carousel-lg-03.jpg') top center no-repeat;
   }
 
-}
+  }
 
-#featuresHeadingResources{
-  margin-top: 60px;
-}
 
-#resourcesColumn{
-  text-align: center;;
-}
-#featuresResources img{
-  height: 250px;
-  width: 250px;
-  margin-bottom: 5px;
-}
+/*
+  css for what we do section in index.html
+ */
+
+   .well .page-header{
+     margin-top: 0px;
+   }
+
+   .well .page-header h1{
+     text-shadow: 0 2px 0 white;
+     margin-top: 0px;
+   }
+
+   .well{
+     background: url('../../img/blue_1.jpg');
+     margin:18px 15px;
+   }
+
+/*
+  css for features section in index.html
+*/
+
+   #features ul{
+     list-style-type: circle;
+     padding-left: 13px;
+   }
+
+   #features img{
+     margin-bottom: 20px;
+   }
+
+/*
+  css for tab items in index.html
+*/
+
+   .tabbable img {
+     margin:0 10px 10px 0;
+   }
+
+   #myTab{
+     padding-left: 10px;
+   }
+
+   #myTab h4{
+    line-height: 1.3em;
+  }
+
+/*
+  css for model window
+*/
+  #query{
+    margin-bottom: 15px;
+  }
+
+
+/*
+ css code for footer
+ */
+
+   footer{
+     color:#eee;
+     background:#333;
+   }
+
+   footer .container{
+      padding-left:10px;
+    }
+
+
+   ul.unstyled{
+     list-style-type: none;
+     padding: 0px;
+   }
+
+   ul.unstyled li{
+     margin: 10px 0px;
+   }
+
+   ul.social{
+     list-style-type: none;
+     padding: 0px;
+   }
+
+   ul.social li{
+     display: inline;
+     margin: 0px 15px 0 0;
+
+   }
+
+   #copyright{
+     background-color: black;
+     height: 50px;
+     margin:0px;
+     padding: 20px 20px;
+   }
+
+
+/*
+  css for features in resource.index
+*/
+   #featuresHeadingResources{
+     margin-top: 60px;
+   }
+
+   #resourcesColumn{
+     text-align: center;;
+   }
+
+   #featuresResources img{
+     height: 250px;
+     width: 250px;
+     margin-bottom: 5px;
+   }
