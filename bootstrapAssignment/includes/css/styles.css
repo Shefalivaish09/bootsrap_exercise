@@ -190,7 +190,7 @@ My Custom CSS
   }
 
 /*
-  css for model window
+  css for model window in index.html
 */
   #query{
     margin-bottom: 15px;
@@ -240,7 +240,7 @@ My Custom CSS
 
 
 /*
-  css for features in resource.index
+  css for features in resource.html
 */
    #featuresHeadingResources{
      margin-top: 60px;
