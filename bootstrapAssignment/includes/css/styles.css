@@ -192,10 +192,17 @@ My Custom CSS
 /*
   css for model window in index.html
 */
+ .modal-body p{
+   margin-bottom: 10px;
+ }
+
   #query{
     margin-bottom: 15px;
   }
 
+ #myModal .modal-body{
+   padding-bottom: 0px;
+ }
 
 /*
  css code for footer
